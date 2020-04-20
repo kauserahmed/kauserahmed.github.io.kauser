@@ -113,3 +113,7 @@
   padding: 2em;
 }
 
+.projects-grid {
+  display: flex;
+}
+
