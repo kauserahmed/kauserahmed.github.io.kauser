@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import profilepic from './kauser.jpg';
+//import resume from './Resume.pdf';
 
 
 class Resume extends Component {
@@ -35,6 +36,9 @@ class Resume extends Component {
             <p>kauserahmed97@gmail.com</p>
             <h5>Web</h5>
             <p>Coming soon</p>
+            <p>
+            <a href= "https://drive.google.com/file/d/1-wYR8tEEDJpIUxZ2MPzlnr9666etvNed/view?usp=sharing" className="button"><i className="fa fa-download"></i>Download Resume</a>
+            </p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           </Grid>
