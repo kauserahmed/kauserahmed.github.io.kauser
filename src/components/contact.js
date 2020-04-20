@@ -47,10 +47,53 @@ class Contact extends Component {
                 </ListItem>
               </List>
             </div>
-            </Cell>
-            
+
+            <div className="row">
+            <div className="email-body">
+
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label htmlFor="contactName"><b>Name  </b> <span className="required">*</span></label>
+						   <input type="text" defaultValue="" size="52" id="contactName" name="contactName" onChange={this.handleChange}/>
+                  </div>
+
+                  <div>
+						   <label htmlFor="contactEmail"> <b>Email  </b><span className="required">*</span></label>
+						   <input type="text" defaultValue="" size="52" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+                  </div>
+
+                  <div>
+						   <label htmlFor="contactSubject"><b>Subject  </b> <span className="required">*</span></label>
+						   <input type="text" defaultValue="" size="52" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+                  </div>
+
+                  <div>
+                     <label htmlFor="contactMessage"><b>Message </b><span className="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button className="submit"><b>Submit</b></button>
+                     <span id="image-loader">
+                        <img alt="" src="./loader.gif" />
+                     </span>
+                  </div>
+					</fieldset>
+				   </form>
+
+           <div id="message-warning"> Error</div>
+				   <div id="message-success">
+                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
+				   </div>
+           </div>
+
+           </div>
+          </Cell> 
         </Grid>
         </div>
+           
         )
     }
 }

@@ -68,20 +68,12 @@
   justify-content: center;
   padding-top: 2em;
 }
-.email-body {
-  margin: auto;
-  position: auto;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
-}
 
 .contact-grid {
   text-align: center;
   justify-content: center;
   width: 80%;
-  height: 550px;
+  height: 700px;
   background: white;
   color: black;
   margin-bottom: 20px;
@@ -115,5 +107,49 @@
 
 .projects-grid {
   display: flex;
+}
+
+.row {
+  position: right;
+  width: 96%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-body {
+  margin: auto;
+  position: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+  background: gray;
+  text-align: center;
+  justify-content: center;
+  height: 300px;
+  color: black;
+  
+}
+
+#message-warning, #message-success {
+   display: none;
+	background: #0F0F0F;
+	padding: 24px 24px;
+	margin-bottom: 36px;
+   width: 65%;
+   margin-left: 26%;
+}
+#message-warning { color: #D72828; }
+#message-success { color: #11ABB0; }
+
+#message-warning i,
+#message-success i {
+   margin-right: 10px;
+}
+#image-loader {
+   display: none;
+   position: relative;
+   left: 18px;
+   top: 17px;
 }
 
